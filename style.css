@@ -1,0 +1,229 @@
+/* 1 rem = 16px */
+@font-face {
+  font-family: japan;
+  src: url(./3856NeueMachina.woff2);
+}
+@font-face {
+  font-family: gilroy;
+  src: url(./Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: gilroybold;
+  src: url(./Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: gilroythin;
+  src: url(./Gilroy-Thin.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body{
+  overflow-x: hidden;
+}
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5.5rem
+}
+.part-2 {
+  display: flex;
+  /* justify-content: space-between;
+    padding: 10px; */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+nav h1{
+  font-size: 2.48rem;
+  font-family: gilroybold;
+  /* display: flex;
+  align-items: center;
+  gap: 1.25rem; */
+}
+nav h4{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+nav button{
+  padding: 1.375rem 2.5rem;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border-radius: 0.625rem;
+  border: 0.125rem solid #000;
+  font-weight: 500;
+}
+nav h1 i{
+  display: inline-block;
+  rotate: 45deg;
+  font-size: 3.4375rem;
+}
+.center{
+  /* background-color: aqua; */
+  padding: 4.5rem 5.5rem;
+  height: 80%;
+  width: 100%;
+  display: flex;
+}
+.center-part-1{
+  /* background-color: lightseagreen; */
+  height: 100%;
+  width: 44%;
+}
+
+.center-part-1 h1{
+  line-height: 1.2;
+  font-size: 4rem;
+  font-family: japan;
+}
+.center-part-1 p{
+  font-size: 1.3rem;
+  font-family: gilroythin;
+  font-weight: 1000;
+  width: 100%;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.center-part-1 button{
+  background-color: black;
+  color: #fff;
+  border-radius: 0.625rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: gilroythin;
+  border: none;
+}
+.center-part-2{
+  /* background-color: lightcoral; */
+  height: 100%;
+  width: 56%;
+  position: relative;
+}
+.center-part-2 img{
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.section1bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 7rem;
+}
+.section1bottom img{
+  height: 2.5rem;
+}
+.section2 .services{
+  /* background-color: red; */
+  padding: 2.5rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+  margin-top: 3.75rem;
+}
+.services h3{
+  background-color: #B9FF66;
+  font-weight: 500;
+  padding: 0rem 0.3rem;
+  border-radius: 0.3rem;
+  font-size: 3rem;
+  font-family: japan;
+}
+.services p{
+  width: 45%;
+  font-size: 1.05rem;
+}
+.container
+{
+  height: 105%;
+  width: 100%;
+  padding: 0rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background-color: #B9FF66; */
+}
+.elem{
+  flex-shrink: 0;
+  /* background-color: red; */
+  height: 40%;
+  width: 47%;
+  border: 0.1875rem solid black;
+  border-radius: 2.5rem;
+  margin-top: 2.5rem;
+  box-shadow: 0rem 0.5rem 0 black;
+  /* x-axis se kitna door, y-axis se kitna door, blur, colour konsa */
+  padding: 3.75rem;
+  display: flex;
+}
+.elem-part1{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.elem-part2{
+  height: 100%;
+  width: 50%;
+}
+.elem-part2 img{
+  height: 100%;
+}
+.elem-part1 h2{
+  background-color: #B9FF66;
+  width: fit-content;
+  padding: 0.25rem 0.6rem;
+  width: 80%;
+  border-radius: 0.4rem;
+}
+.elem-part1 h4{
+  display: flex;
+  align-items: center;
+  font-size: large;
+  gap: 0.9rem;
+}
+.elem-part1 h4 i{
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  /* font-weight: 900; */
+  /* height: 100%; */
+}
+.black{
+  background-color: #000;
+}
+.black .elem-part1 h4 i{
+  padding: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  /* font-weight: 900; */
+  /* height: 100%; */
+}
+.black .elem-part1 h2{
+  background-color: #fff;
+  width: fit-content;
+  padding: 0.25rem 0.6rem;
+  width: 80%;
+  border-radius: 0.4rem;
+  /* color: black; */
+}
